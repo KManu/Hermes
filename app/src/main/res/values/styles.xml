@@ -1,0 +1,160 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+	
+	
+	<!-- Resource Declaration -->
+	<color name="light_gray">#e2e2e2</color>
+	<color name="light_blue">#76d3ff</color>
+	<color name="deep_blue">#0f4492</color>
+	<color name="reddish">#9e0039</color>
+	<color name="chalk">#f3f2f2</color>
+	<color name="burnedAsh">#5c5c5c</color>
+	<color name="transparent">#00000000</color>
+	<color name="trans_light_blue">#8076d3ff</color>
+	<color name="trans_deep_blue">#7f0f4492</color>
+	<color name="trans_light_gray">#7fe2e2e2</color>
+	<color name="trans_reddish">#7f9e0039</color>
+	<color name="trans_chalk">#7ff3f2f2</color>
+	<color name="trans_burnedAsh">#7f5c5c5c</color>
+	<color name="trans_drawer_color">#0f5c5c5c</color>
+	<color name="fbutton_default_color">#3eadeb</color>
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+    <color name="flat_light_blue">#33b5e5</color>
+    <color name="flat_deep_blue">#0099cc</color>
+    <color name="flat_bright_green">#99cc00</color>
+    <color name="flat_dark_green">#669900</color>
+    <color name="flat_bright_red">#ff4444</color>
+    <color name="flat_dark_red">#cc0000</color>
+    <color name="flat_gold">#ffbb33</color>
+    <color name="flat_orange">#ff8800</color>
+    <color name="flat_light_purple">#AA66cc</color>
+    <color name="flat_deep_purple">#9933cc</color>
+	
+	
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	
+	<!--
+		Styles listed under this are custom themes. Categorize as necessary. 
+		All colors/common resources to be used in different styles should be defined at the top.
+		
+		Theme items do not need to be prefixed with the android: namespace
+		
+	-->
+	
+	
+	
+	<style name="NoActionBar" parent="@style/Theme.AppCompat.Light">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	
+	
+	<style name="ActionBarTheme" parent="@style/Theme.AppCompat">
+    	<!-- Setting values in the default namespace affects API levels 7-13 -->
+    	<item name="actionBarStyle">@style/TransLinedActionBar</item>
+    	<item name="popupMenuStyle">@style/MenuStyle</item>
+	</style>
+
+	<style name="TransLinedActionBar" parent="@style/Widget.AppCompat.ActionBar">
+    	<!-- Setting values in the default namespace affects API levels 7-13 -->
+    	<item name="background">@color/trans_deep_blue</item>
+    	<item name="windowActionBarOverlay">true</item>
+    	<item name="titleTextStyle">@style/ActionBarTextChalk</item>
+	</style>
+	
+	<style name="MenuStyle" parent="@style/Widget.AppCompat.ListPopupWindow">
+	    <item name="android:popupBackground">@color/trans_deep_blue</item>
+	    <item name="android:textColor">@color/chalk</item>
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	<!-- Activity Background Styles -->
+	<style name="GrayBack">		
+        <item name="android:windowBackground">@color/light_gray</item>
+		<item name="android:colorBackground">@color/light_gray</item>
+    </style>
+	<style name="BlueBack">
+		<item name="android:windowBackground">@color/light_blue</item>
+		<item name="android:colorBackground">@color/light_blue</item>
+	</style>
+	<style name="ReddishBack">
+		<item  name="android:windowBackground">@color/reddish</item>
+		<item name="android:colorBackground">@color/reddish</item>
+	</style>
+	
+	<!-- Button Styles -->
+	<style name="transLinedButton">
+	    <item name="android:textColor">@color/chalk</item>
+	    <item name="android:background">@drawable/round_corners</item>
+	    <item name="android:textSize">15sp</item>
+	</style>
+	<style name="whiteRectBorder">
+	    <item name="android:background">@drawable/rect_border_ring</item>
+	</style>
+	
+	<!-- Form styles -->
+	<style name="flat_button">
+	    <item name="android:textColor">@color/fbutton_color_wet_asphalt</item>
+	    <item name="android:background">@drawable/flat_button</item>
+	</style>
+	
+
+	
+	<!-- Action Bar Text style -->
+	<style name="ActionBarTextChalk" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+	    <item name="android:textColor">@color/chalk</item>
+	    
+	</style>
+
+	
+	<!--Misc resources -->
+	<style name="Divider">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">2dp</item>
+	    <item name="android:background">#FFFFFF</item>
+	</style>
+	
+
+</resources>

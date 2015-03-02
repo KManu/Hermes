@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/ProfilePageFlat_RelativeBack"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/trans_burnedAsh" >
+	
+	    <Button
+	        android:id="@+id/ProfilePageFlat_ButtomButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="0dp"
+	        android:layout_marginRight="0dp"
+	        android:layout_marginTop="90dp"
+	        android:background="@color/fbutton_color_clouds"
+	        android:text="" />
+	
+	    <TextView
+	        android:id="@+id/ProfilePageFlat_CompanyDescription"
+	        style="@style/flat_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/ProfilePageFlat_ButtomButton"
+	        android:layout_alignRight="@+id/ProfilePageFlat_ButtomButton"
+	        android:layout_below="@+id/ProfilePageFlat_CompanyLogo"
+	        android:layout_margin="5dp"
+	        android:layout_marginTop="14dp"
+	        android:maxLines="5"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:scrollbars="vertical"
+	        android:text="Ye Olde Company of Men was established in 1975 as a place where world class vampire hunters could ply their trade, and where the public seeking vampire extermination could gain such services. We are open each day of the week, from 5.30 am till 9pm." 
+	        android:textSize="18sp"/>
+	
+	    <TextView
+	        android:id="@+id/ProfilePageFlat_CompanyName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="Ye Olde Company Of Men"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/chalk"
+	        android:textStyle="bold" />
+	
+	    <ImageView
+	        android:id="@+id/ProfilePageFlat_CompanyLogo"
+	        style="@style/flat_button"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_alignBottom="@+id/ProfilePageFlat_WebButton"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/flat_button"
+	        android:minHeight="100dp"
+	        android:minWidth="100dp"
+	        android:padding="1dp"
+	        android:src="@drawable/selfie" />
+	
+	    <ImageView
+	        android:id="@+id/ProfilePageFlat_WebButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/ProfilePageFlat_CompanyDescription"
+	        android:layout_alignTop="@+id/ProfilePageFlat_ButtomButton"
+	        android:clickable="true"
+	        android:src="@drawable/ic_flat_web_button" />
+	
+	    <ImageView
+	        android:id="@+id/ProfilePageFlat_MapButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/ProfilePageFlat_CompanyDescription"
+	        android:layout_marginLeft="13dp"
+	        android:layout_toRightOf="@+id/ProfilePageFlat_WebButton"
+	        android:clickable="true"
+	        android:src="@drawable/ic_flat_map_icon" />
+	
+	    <ImageView
+	        android:id="@+id/ProfilePageFlat_FavButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/ProfilePageFlat_CompanyDescription"
+	        android:layout_alignRight="@+id/ProfilePageFlat_CompanyDescription"
+	        android:clickable="true"
+            android:visibility="invisible"
+	        android:src="@drawable/ic_profile_fav" />
+	
+	    <RelativeLayout
+	        android:id="@+id/ProfilePageFlat_NumbersRelative"
+	        style="@style/flat_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/ProfilePageFlat_CompanyDescription"
+	        android:layout_alignRight="@+id/ProfilePageFlat_CompanyDescription"
+	        android:layout_below="@+id/ProfilePageFlat_CompanyDescription"
+	        android:layout_marginTop="10dp">
+	
+	        <ListView
+	            android:id="@+id/ProfilePageFlat_PhoneNumberList"
+	            android:layout_width="match_parent"
+	            android:layout_height="80dp "
+	            android:layout_alignLeft="@+id/ProfilePageFlat_PhoneNumbersLabel"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/ProfilePageFlat_PhoneNumbersLabel"
+	            android:background="@color/trans_chalk"
+	            android:divider="@android:color/transparent"
+	            android:dividerHeight="3dp"
+	            android:padding="5dp"
+	            android:scrollbars="vertical" >
+	        </ListView>
+	
+	        <TextView
+	            style="@style/flat_button"
+	            android:id="@+id/ProfilePageFlat_PhoneNumbersLabel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:padding="5dp"
+	            android:text="Contact Numbers"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"
+	            android:textSize="16sp" />
+	    </RelativeLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/ProfilePageFlat_LocationRelative"
+	        style="@style/flat_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/ProfilePageFlat_NumbersRelative"
+	        android:layout_alignRight="@+id/ProfilePageFlat_NumbersRelative"
+	        android:layout_below="@+id/ProfilePageFlat_NumbersRelative"
+	        android:layout_marginTop="16dp" >
+	
+	        <TextView
+	            android:id="@+id/ProfilePageFlat_CompanyLocation"
+	            style="@style/flat_button"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/ProfilePageFlat_LocationLabel"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/ProfilePageFlat_LocationLabel"
+	            android:padding="5dp"
+	            android:background="@color/trans_chalk"
+	            android:gravity="left"
+	            android:maxLines="3"
+	            android:scrollbars="vertical"
+	            android:text="In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery." />
+	
+	        <TextView
+	            style="@style/flat_button"
+	            android:id="@+id/ProfilePageFlat_LocationLabel"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:padding="5dp"
+	            android:text="Location"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@android:color/black"
+	            android:textSize="16sp" />
+	    </RelativeLayout>
+	</RelativeLayout>
+	
+
+

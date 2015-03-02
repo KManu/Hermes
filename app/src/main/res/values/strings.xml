@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hermes</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_page_text">Hi. This is filler text for the home page.</string>
+    <string name="company_profiles_text">Filler text for the compnay profiles page. nothing to see here.</string>
+    <string name="listings_text">Filler text for the listings page. shoo on....shoo on..</string>
+    <string name="search_page_text">Filler for the search page. Were you searching for anything else?</string>
+    <string name="map_text">Filler text for the map activity. Maps out exactly nothing usefull about the page</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+	<string-array name="Drawer_Items">
+		<item >View All Companies</item>
+		<item >Categories</item>
+		<item>Search</item>
+		<item >Saved Companies</item>
+	</string-array>
+</resources>

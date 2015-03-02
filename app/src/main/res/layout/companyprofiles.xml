@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_clouds"
+    android:scrollbars="vertical" >
+    
+    <Button
+        android:id="@+id/ProfilePage_LowerDataBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProfilePage__PhoneNumbLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ProfilePage_PhoneNumbersListView"
+        android:layout_below="@+id/profilePage_Div"
+        android:text=""
+        android:clickable="false"
+        android:background="@drawable/round_corners"/>
+    <Button 
+        android:id="@+id/ProfilePage_DesriptionBack"
+        style="@style/transLinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/profilePage_Div"
+        android:layout_alignBottom="@+id/ProfilePage_WebsiteButton"
+        android:layout_alignRight="@+id/ProfilePage_CompanyName"
+        android:layout_alignTop="@+id/ProfilePage_CompanyLogo"
+        android:layout_toRightOf="@+id/ProfilePage__PhoneNumbLabel"/>
+
+    <View
+        android:id="@+id/profilePage_Div"
+        style="@style/Divider"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <ListView
+        android:id="@+id/ProfilePage_PhoneNumbersListView"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ProfilePage_LocationLabel"
+        android:layout_alignRight="@+id/ProfilePage_CompanyDescription"
+        android:layout_alignTop="@+id/ProfilePage__PhoneNumbLabel"
+        android:layout_toRightOf="@+id/ProfilePage__PhoneNumbLabel"
+        android:fadeScrollbars="false"
+        android:isScrollContainer="true"
+        android:paddingRight="5dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/ProfilePage_CompanyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ProfilePage_PhoneNumbersListView"
+        android:layout_alignTop="@+id/ProfilePage_LocationLabel"
+        android:layout_toRightOf="@+id/ProfilePage__PhoneNumbLabel"
+        android:maxLines="7"
+        android:padding="5sp"
+        android:scrollbars="vertical"
+        android:text="In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery.In a yellow spanish gallion roundabout the circle behind the old Crusty Crab Eatery."
+        android:textColor="@color/chalk"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ProfilePage_LocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/ProfilePage__PhoneNumbLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:text="Location"
+        android:textColor="@color/chalk"
+        android:padding="5sp" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ProfilePage__PhoneNumbLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProfilePage_CompanyLogo"
+        android:layout_alignTop="@+id/ProfilePage_LowerDataBack"
+        android:padding="5sp"
+        android:text="Phone Number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/chalk" />
+
+    <ImageButton
+        android:id="@+id/ProfilePage_MapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProfilePage_CompanyLogo"
+        android:layout_alignTop="@+id/ProfilePage_WebsiteButton"
+        android:background="@drawable/round_corners"
+        android:src="@drawable/ic_map" />
+
+    <TextView
+        android:id="@+id/ProfilePage_CompanyDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profilePage_Div"
+        android:layout_alignBottom="@+id/ProfilePage_WebsiteButton"
+        android:layout_alignRight="@+id/ProfilePage_CompanyName"
+        android:layout_alignTop="@+id/ProfilePage_CompanyLogo"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ProfilePage__PhoneNumbLabel"
+        android:padding="5sp"
+        android:scrollbars="vertical"
+        android:text="Ye Olde Company of Men was established in 1975 as a place where world class vampire hunters could ply their trade, and where the public seeking vampire extermination could gain such services. We are open each day of the week, from 5.30 am till 9pm. "
+        android:textColor="@color/chalk"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ProfilePage_CompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentTop="true"
+        android:padding="3sp"
+        android:text="Ye Olde Company of Men"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/ProfilePage_WebsiteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ProfilePage_CompanyLogo"
+        android:layout_below="@+id/ProfilePage_CompanyLogo"
+        
+        android:layout_marginTop="14dp"
+        android:background="@drawable/round_corners"
+        android:src="@drawable/ic_web_button" />
+
+    <ImageView
+        android:id="@+id/ProfilePage_CompanyLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/ProfilePage_CompanyName"
+        android:layout_below="@+id/ProfilePage_CompanyName"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/flat_button"
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        android:padding="5dp"
+        android:src="@drawable/selfie" />
+
+</RelativeLayout>

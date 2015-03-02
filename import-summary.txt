@@ -1,0 +1,111 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitattributes
+* .gitignore
+* DB Model\
+* DB Model\TESTA.sql
+* DB Model\TESTCompanyDatabaseFile.db-new
+* DB Model\TableCSV\
+* DB Model\TableCSV\CompnyInformationTable.csv
+* DB Model\TestDatabase V1\
+* DB Model\TestDatabase V1\DB model.mwb
+* DB Model\TestDatabase V1\DB model.mwb.bak
+* DB Model\TestDatabase V1\SQLITE Create Script v1.0.sql
+* DB Model\TestDatabase V1\TESTCompanyDatabaseFile.db
+* DB Model\TestDatabase V2\
+* DB Model\TestDatabase V2\TESTCompanyDatabaseFileV2.db
+* DB Model\UpgradeScriptV1.sql
+* LightGrey.png
+* README.md
+* Thumbs.db
+* comp_placeholder-web.png
+* ic_drawer_categories-web.png
+* ic_drawer_listings-web.png
+* ic_drawer_saved-web.png
+* ic_drawer_search-web.png
+* ic_flat_map_button-web.png
+* ic_flat_map_icon-web.png
+* ic_flat_web_button-web.png
+* ic_launcher-web.png
+* ic_map-web.png
+* ic_profile_fav-web.png
+* ic_profile_fav_selected-web.png
+* ic_profileplaceholder-web.png
+* ic_web_button-web.png
+* main_searchicon-web.png
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:19.1.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:19.1.0]
+google-play-services_lib => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\glide-2.0.5.jar => app\libs\glide-2.0.5.jar
+* libs\sqliteassethelper-2.0.1.jar => app\libs\sqliteassethelper-2.0.1.jar
+* proguard-project.txt => app\proguard-project.txt
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

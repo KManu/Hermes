@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/DrawerListRow_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/DrawerListRow_Icon"
+        android:padding="5dp"
+        android:text="Drawer Option"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/DrawerListRow_Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/DrawerListRow_textView"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

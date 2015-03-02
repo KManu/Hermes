@@ -1,0 +1,35 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- RES-14
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+        
+        Prefix theme items here with android: namespace 
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+    
+    
+    <style name="ActionBarTheme" parent="@style/Theme.AppCompat">
+    	<!-- Setting values in the android namespace affects API levels 14+ -->
+    	<item name="android:actionBarStyle">@style/TransLinedActionBar</item>
+    	<item name="android:popupMenuStyle">@style/MenuStyle </item>		
+	</style>
+
+	<style name="TransLinedActionBar" parent="@style/Widget.AppCompat.ActionBar">
+    	<!-- Setting values in the android namespace affects API levels 14+ -->
+    	<item name="android:background">@color/trans_deep_blue</item>
+    	<item name="android:windowActionBarOverlay">true</item>
+		<item name="android:titleTextStyle">@style/ActionBarTextChalk</item>
+	</style>
+    
+	<style name="MenuStyle" parent="@style/Widget.AppCompat.ListPopupWindow">
+	    <item name="android:popupBackground">@color/trans_deep_blue</item>
+	    <item name="android:textColor">@color/chalk</item>
+	</style>
+    
+    
+
+</resources>

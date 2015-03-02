@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_clouds" >
+    
+    <Button
+        android:id="@+id/aboutPage_backButton"
+        style="@style/flat_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/aboutPage_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aboutPage_backButton"
+        android:layout_alignRight="@+id/aboutPage_backButton"
+        android:layout_alignTop="@+id/aboutPage_backButton"
+        android:padding="5sp"
+        android:text="Large Text"
+        android:textColor="@color/burnedAsh"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/aboutPage_backButton"
+        android:layout_alignRight="@+id/aboutPage_backButton"
+        android:layout_below="@+id/aboutPage_heading"
+        android:layout_alignBottom="@+id/aboutPage_backButton"
+        android:padding="2sp">
+        
+        <TextView
+        android:id="@+id/aboutPage_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:padding="5sp"
+        android:text="TextView"
+        android:textColor="@color/burnedAsh" />
+        
+    </ScrollView>
+
+    
+
+ 
+
+</RelativeLayout>

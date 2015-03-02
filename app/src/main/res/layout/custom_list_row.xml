@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+ <!--XML file for the layout of each row for use in the custom listViews in the Hermes-->
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      style="@style/flat_button"
+      android:background="@drawable/abc_menu_dropdown_panel_holo_light"
+      android:gravity="bottom"
+      android:orientation="horizontal"
+      android:padding="10dp"
+      android:layout_margin="5dp" >
+	
+<!--       Divider at the top -->
+      
+	<!--Thumbnail of the company logo-->
+
+	<LinearLayout
+	    android:id="@+id/Listings_thumbnail"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginRight="5dip"
+	    android:padding="1dp">
+
+		<ImageView
+		    android:id="@+id/Listings_CompanyLogo"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/selfie" />
+	
+	</LinearLayout>
+	
+	<!--Name of Company-->
+		
+	<!--Location of the Company-->
+
+	<TextView
+	    android:id="@+id/Listings_CompanyLocation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/Listings_thumbnail"
+	    android:layout_alignRight="@+id/Listings_CompanyDescription"
+	    android:maxLines="1"
+	    android:text="Finde us roundabout ye old circle"
+	    android:textColor="#000000"
+	    android:textSize="10sp"
+	    android:textStyle="bold|italic" />
+
+	<TextView
+	    android:id="@+id/Listings_CompanyDescription"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/Listings_CompanyLocation"
+	    android:layout_alignLeft="@+id/Listings_CompanyName"
+	    android:maxLines="2"
+	    android:textColor="#000001"
+	    android:text="A companie working to solve your wyvern infestation problems. Open 9 days of the week.Except magikal holidays. Our pyromancers dont work on those days."
+	    android:textSize="12sp" />
+
+	<TextView
+	    android:id="@+id/Listings_CompanyName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/Listings_thumbnail"
+	    android:layout_marginBottom="2dp"
+	    android:layout_toRightOf="@+id/Listings_thumbnail"
+	    android:maxLines="1"
+	    android:text="Ye Ole Company LTD"
+	    android:textColor="@android:color/black"
+	    android:textSize="15sp"
+	    android:textStyle="bold"
+	    android:typeface="serif" />
+	
+	
+	
+ 
+ </RelativeLayout>
